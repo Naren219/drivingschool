@@ -12,7 +12,7 @@ oldschool = []
 newschool = []
 found = False
 
-# Writing file boilerplate
+# Writing file
 response = requests.get('https://jordandriving.com/driver-education-fee-class-schedules-fee/')
 soup = BeautifulSoup(response.content, 'html.parser')
 request = soup.find("div", class_="entry-content")
